@@ -189,7 +189,6 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
      * init views
      */
     private void initView(Bundle savedInstanceState) {
-
         rl_picture_title = (RelativeLayout) findViewById(R.id.rl_picture_title);
         picture_left_back = (ImageView) findViewById(R.id.picture_left_back);
         picture_title = (TextView) findViewById(R.id.picture_title);

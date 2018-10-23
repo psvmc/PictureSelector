@@ -121,6 +121,11 @@ public class UCropActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ucrop_activity_photobox);
+        if (Build.VERSION.SDK_INT >= 19) {//19表示4.4
+            Window window = getWindow();
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
+
 
         final Intent intent = getIntent();
 
